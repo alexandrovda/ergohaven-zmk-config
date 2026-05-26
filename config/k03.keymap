@@ -74,12 +74,14 @@
 
         useful {
             bindings = <
-&trans  &trans      &kp F5          &kp F10        &kp F11        &kp LS(F9)                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &kp LC(E)       &kp LC(N)      &kp LC(LS(R))  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &kp LA(LC(F7))  &kp LA(LC(B))  &kp LC(SPACE)  &kp LA(ENTER)                       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp K_UNDO  &kp K_CUT       &kp K_COPY     &kp K_PASTE    &kp LG(V)      &kp LC(B)    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                    &trans          &trans         &trans         &trans         &trans       &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &kp F5          &kp F10        &kp F11        &kp LS(F9)                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &kp LC(E)       &kp LC(N)      &kp LC(LS(R))  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &kp LA(LC(F7))  &kp LA(LC(B))  &kp LC(SPACE)  &kp LA(ENTER)                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(Z)  &kp LC(X)       &kp LC(C)      &kp LC(V)      &kp LG(V)      &kp LC(B)    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                   &trans          &trans         &trans         &trans         &trans       &trans  &trans  &trans  &trans  &trans
             >;
+
+            label = "useful";
         };
     };
 };
