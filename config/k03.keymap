@@ -49,8 +49,8 @@
         nav {
             bindings = <
 &kp F1    &kp F2  &kp F3        &kp F4    &kp F5         &kp F6                             &kp F7           &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans    &trans  &kp DELETE    &kp UP    &kp BACKSPACE  &kp HOME                           &kp PG_UP        &kp N7  &kp N8  &kp N9   &trans   &trans
-&kp CLCK  &trans  &kp LEFT      &kp DOWN  &kp RIGHT      &kp END                            &kp PG_DN        &kp N4  &kp N5  &kp N6   &trans   &trans
+&kp CAPS  &trans  &kp DELETE    &kp UP    &kp BACKSPACE  &kp HOME                           &kp PG_UP        &kp N7  &kp N8  &kp N9   &trans   &trans
+&trans    &trans  &kp LEFT      &kp DOWN  &kp RIGHT      &kp END                            &kp PG_DN        &kp N4  &kp N5  &kp N6   &trans   &trans
 &trans    &trans  &kp LC(LEFT)  &trans    &kp LC(RIGHT)  &kp INS   &kp BACKSPACE    &trans  &kp PRINTSCREEN  &kp N1  &kp N2  &kp N3   &trans   &trans
                   &trans        &trans    &trans         &trans    &kp ENTER        &trans  &mo 3            &trans  &kp N0  &trans
             >;
