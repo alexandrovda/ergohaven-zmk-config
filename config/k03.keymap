@@ -29,11 +29,11 @@
 
         base {
             bindings = <
-&kp ESC         &kp N1  &kp N2    &kp N3    &kp N4  &kp N5                             &kp N6  &kp N7                              &kp N8     &kp N9    &kp N0    &kp BSPC
-&kp TAB         &kp Q   &kp W     &kp E     &kp R   &kp T                              &kp Y   &kp U                               &kp I      &kp O     &kp P     &kp LEFT_BRACKET
-&kp LEFT_SHIFT  &kp A   &kp S     &kp D     &kp F   &kp G                              &kp H   &kp J                               &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LCTRL       &kp Z   &kp X     &kp C     &kp V   &kp B   &kp F5         &kp K_MUTE  &kp N   &behavior_hold_tap RIGHT_BRACKET M  &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-                        &kp LGUI  &kp LALT  &mo 4   &mo 1   &lt 4 SPACE    &kp ENTER   &mo 2   &kp RCTRL                           &kp RALT   &kp RGUI
+&kp ESC         &kp N1  &kp N2    &kp N3    &kp N4  &kp N5                                  &kp N6  &kp N7                              &kp N8     &kp N9    &kp N0    &kp BSPC
+&kp TAB         &kp Q   &kp W     &kp E     &kp R   &kp T                                   &kp Y   &kp U                               &kp I      &kp O     &kp P     &kp LEFT_BRACKET
+&kp LEFT_SHIFT  &kp A   &kp S     &kp D     &kp F   &kp G                                   &kp H   &kp J                               &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LCTRL       &kp Z   &kp X     &kp C     &kp V   &kp B        &kp F5         &kp K_MUTE  &kp N   &behavior_hold_tap RIGHT_BRACKET M  &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+                        &kp LGUI  &kp LALT  &mo 4   &lt 1 ENTER  &lt 4 SPACE    &kp ENTER   &mo 2   &kp RCTRL                           &kp RALT   &kp RGUI
             >;
 
             display-name = "Base";
@@ -48,11 +48,11 @@
 
         nav {
             bindings = <
-&kp F1    &kp F2  &kp F3        &kp F4    &kp F5         &kp F6                             &kp F7           &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&kp CAPS  &trans  &kp DELETE    &kp UP    &kp BACKSPACE  &kp HOME                           &kp PG_UP        &kp N7  &kp N8  &kp N9   &trans   &trans
-&trans    &trans  &kp LEFT      &kp DOWN  &kp RIGHT      &kp END                            &kp PG_DN        &kp N4  &kp N5  &kp N6   &trans   &trans
-&trans    &trans  &kp LC(LEFT)  &trans    &kp LC(RIGHT)  &kp INS   &kp BACKSPACE    &trans  &kp PRINTSCREEN  &kp N1  &kp N2  &kp N3   &trans   &trans
-                  &trans        &trans    &trans         &trans    &kp ENTER        &trans  &mo 3            &trans  &kp N0  &trans
+&kp F1    &kp F2  &kp F3        &kp F4    &kp F5         &kp F6                     &kp F7           &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&kp CAPS  &trans  &kp DELETE    &kp UP    &kp BACKSPACE  &kp HOME                   &kp PG_UP        &kp N7  &kp N8  &kp N9   &trans   &trans
+&trans    &trans  &kp LEFT      &kp DOWN  &kp RIGHT      &kp END                    &kp PG_DN        &kp N4  &kp N5  &kp N6   &trans   &trans
+&trans    &trans  &kp LC(LEFT)  &trans    &kp LC(RIGHT)  &kp INS   &none    &trans  &kp PRINTSCREEN  &kp N1  &kp N2  &kp N3   &trans   &trans
+                  &trans        &trans    &trans         &trans    &none    &trans  &mo 3            &trans  &kp N0  &trans
             >;
 
             display-name = "Nav";
@@ -84,11 +84,11 @@
 
         useful {
             bindings = <
-&trans  &trans     &kp F5          &kp F10        &kp F11        &kp LS(F9)                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &kp LC(E)       &kp LC(N)      &kp LC(LS(R))  &trans                              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &kp LA(LC(F7))  &kp LA(LC(B))  &kp LC(SPACE)  &kp LA(ENTER)                       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LC(Z)  &kp LC(X)       &kp LC(C)      &kp LC(V)      &kp LG(V)      &kp LC(B)    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                   &trans          &trans         &trans         &trans         &trans       &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &kp F5          &kp F10        &kp F11        &kp LS(F9)                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &kp LC(N)       &kp LC(E)      &kp LC(LS(R))  &trans                            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &kp LA(LC(F7))  &kp LA(LC(B))  &kp LC(SPACE)  &kp RA(RET)                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(Z)  &kp LC(X)       &kp LC(C)      &kp LC(V)      &kp LG(V)    &kp LC(B)    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                   &trans          &trans         &trans         &trans       &trans       &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "useful";
