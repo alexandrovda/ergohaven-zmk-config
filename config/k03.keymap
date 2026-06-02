@@ -71,11 +71,11 @@
 
         sym {
             bindings = <
-&none  &none     &kp AT    &kp DLLR   &kp HASH  &none                      &none      &none     &kp CARET  &none     &none     &none
-&none  &none     &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                  &none      &kp LBKT  &kp UNDER  &kp RBKT  &none     &none
-&none  &kp BSLH  &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                   &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &none
-&none  &none     &kp STAR  &kp COLON  &kp FSLH  &none      &none    &none  &none      &kp PIPE  &kp TILDE  &kp AMPS  &none     &none
-                 &none     &none      &none     &mo 3      &none    &none  &none      &none     &none      &none
+&none  &kp AMPERSAND  &kp LEFT_BRACKET  &kp PLUS   &kp RIGHT_BRACKET  &kp HASH                    &none      &none     &kp CARET  &none     &none     &none
+&none  &kp AT_SIGN    &kp LT            &kp EQUAL  &kp GT             &kp ASTRK                   &none      &kp LBKT  &kp UNDER  &kp RBKT  &none     &none
+&none  &kp BSLH       &kp LPAR          &kp MINUS  &kp RPAR           &kp DOLLAR                  &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &none
+&none  &kp FSLH       &kp LEFT_BRACE    &kp UNDER  &kp RIGHT_BRACE    &kp COLON   &none    &none  &none      &kp PIPE  &kp TILDE  &kp AMPS  &none     &none
+                      &none             &none      &none              &mo 3       &none    &none  &none      &none     &none      &none
             >;
 
             display-name = "Symbols";
@@ -95,11 +95,11 @@
 
         useful {
             bindings = <
-&trans  &trans       &kp F5          &kp F10        &kp F11        &kp LS(F9)                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &kp LC(N)       &kp LC(E)      &kp LC(LS(R))  &kp LA(INS)                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LC(F12)  &kp LA(LC(F7))  &kp LA(LC(B))  &kp LC(SPACE)  &kp RA(RET)                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LC(Z)    &kp LC(X)       &kp LC(C)      &kp LC(V)      &kp LG(V)    &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                     &trans          &trans         &trans         &trans       &trans    &trans  &trans  &trans  &trans  &trans
+&none  &none        &none           &none          &none      &kp LS(F9)                     &none  &none  &none  &none  &none  &none
+&none  &none        &kp LA(LS(L))   &none          &none      &kp LA(INS)                    &none  &none  &none  &none  &none  &none
+&none  &kp LC(F12)  &kp LA(LC(F7))  &kp LA(LC(B))  &kp LC(N)  &kp LA(ENTER)                  &none  &none  &none  &none  &none  &none
+&none  &kp LC(Z)    &kp LC(X)       &kp LC(C)      &kp LC(V)  &kp LG(V)      &none    &none  &none  &none  &none  &none  &none  &none
+                    &none           &none          &none      &none          &none    &none  &none  &none  &none  &none
             >;
 
             label = "useful";
