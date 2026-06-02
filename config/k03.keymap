@@ -49,7 +49,7 @@
 
             display-name = "Base";
             sensor-bindings =
-                <&inc_dec_kp F3 F3>,
+                <&inc_dec_kp F3 LS(F3)>,
                 <&enc_vol>,
                 <&enc_vol>,
                 <&enc_vol>,
