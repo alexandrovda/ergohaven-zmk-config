@@ -35,6 +35,22 @@
         };
     };
 
+    macros {
+        alt_enter: alt_enter {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp ENTER>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ALT_ENTER";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -50,7 +66,7 @@
             display-name = "Base";
             sensor-bindings =
                 <&inc_dec_kp F3 LS(F3)>,
-                <&enc_vol>,
+                <&inc_dec_kp F12 LS(F12)>,
                 <&enc_vol>,
                 <&enc_vol>,
                 <&enc_vol>,
@@ -71,11 +87,11 @@
 
         sym {
             bindings = <
-&none  &kp AMPERSAND  &kp LEFT_BRACKET  &kp PLUS   &kp RIGHT_BRACKET  &kp HASH                    &none      &none     &kp CARET  &none     &none     &none
-&none  &kp AT_SIGN    &kp LT            &kp EQUAL  &kp GT             &kp ASTRK                   &none      &kp LBKT  &kp UNDER  &kp RBKT  &none     &none
-&none  &kp BSLH       &kp LPAR          &kp MINUS  &kp RPAR           &kp DOLLAR                  &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &none
-&none  &kp FSLH       &kp LEFT_BRACE    &kp UNDER  &kp RIGHT_BRACE    &kp COLON   &none    &none  &none      &kp PIPE  &kp TILDE  &kp AMPS  &none     &none
-                      &none             &none      &none              &mo 3       &none    &none  &none      &none     &none      &none
+&none   &kp AMPERSAND  &kp LEFT_BRACKET  &kp PLUS   &kp RIGHT_BRACKET  &kp HASH                    &none      &none     &kp CARET  &none     &none     &none
+&none   &kp AT_SIGN    &kp LT            &kp EQUAL  &kp GT             &kp ASTRK                   &none      &kp LBKT  &kp UNDER  &kp RBKT  &none     &none
+&trans  &kp BSLH       &kp LPAR          &kp MINUS  &kp RPAR           &kp DOLLAR                  &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &none
+&trans  &kp FSLH       &kp LEFT_BRACE    &kp UNDER  &kp RIGHT_BRACE    &kp COLON   &none    &none  &none      &kp PIPE  &kp TILDE  &kp AMPS  &none     &none
+                       &none             &none      &none              &mo 3       &none    &none  &none      &none     &none      &none
             >;
 
             display-name = "Symbols";
@@ -95,11 +111,11 @@
 
         useful {
             bindings = <
-&none  &none        &kp F5          &kp F10        &kp F11    &kp LS(F9)                     &none  &none  &none  &none  &none  &none
-&none  &none        &kp LA(LS(L))   &none          &none      &kp LA(INS)                    &none  &none  &none  &none  &none  &none
-&none  &kp LC(F12)  &kp LA(LC(F7))  &kp LA(LC(B))  &kp LC(N)  &kp LA(ENTER)                  &none  &none  &none  &none  &none  &none
-&none  &kp LC(Z)    &kp LC(X)       &kp LC(C)      &kp LC(V)  &kp LG(V)      &none    &none  &none  &none  &none  &none  &none  &none
-                    &none           &none          &none      &none          &none    &none  &none  &none  &none  &none
+&none  &none        &kp F5          &kp F10        &kp F11    &kp LS(F9)                   &none  &none  &none  &none  &none  &none
+&none  &none        &kp LA(LS(L))   &none          &none      &kp LA(INS)                  &none  &none  &none  &none  &none  &none
+&none  &kp LC(F12)  &kp LA(LC(F7))  &kp LA(LC(B))  &kp LC(N)  &alt_enter                   &none  &none  &none  &none  &none  &none
+&none  &kp LC(Z)    &kp LC(X)       &kp LC(C)      &kp LC(V)  &kp LG(V)    &none    &none  &none  &none  &none  &none  &none  &none
+                    &none           &none          &none      &none        &none    &none  &none  &none  &none  &none
             >;
 
             label = "useful";
