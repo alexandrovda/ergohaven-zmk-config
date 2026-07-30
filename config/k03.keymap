@@ -49,6 +49,20 @@
 
             label = "ALT_ENTER";
         };
+
+        alt_tab: alt_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ALT_TAB";
+        };
     };
 
     keymap {
@@ -111,11 +125,11 @@
 
         useful {
             bindings = <
-&none   &none        &kp F5          &kp F10        &kp F11    &kp LS(F9)                   &none  &none   &none  &none  &none  &none
-&none   &none        &kp LA(LS(L))   &none          &none      &kp LA(INS)                  &none  &none   &none  &none  &none  &none
-&trans  &kp LC(F12)  &kp LA(LC(F7))  &kp LA(LC(B))  &kp LC(N)  &alt_enter                   &none  &none   &none  &none  &none  &none
-&trans  &kp LC(Z)    &kp LC(X)       &kp LC(C)      &kp LC(V)  &kp LG(V)    &none    &none  &none  &none   &none  &none  &none  &trans
-                     &none           &none          &none      &none        &none    &none  &none  &trans  &none  &none
+&none     &none        &kp F5          &kp F10        &kp F11    &kp LS(F9)                   &none  &none   &none  &none  &none  &none
+&alt_tab  &none        &kp LA(LS(L))   &none          &none      &kp LA(INS)                  &none  &none   &none  &none  &none  &none
+&trans    &kp LC(F12)  &kp LA(LC(F7))  &kp LA(LC(B))  &kp LC(N)  &alt_enter                   &none  &none   &none  &none  &none  &none
+&trans    &kp LC(Z)    &kp LC(X)       &kp LC(C)      &kp LC(V)  &kp LG(V)    &none    &none  &none  &none   &none  &none  &none  &trans
+                       &none           &none          &none      &none        &none    &none  &none  &trans  &none  &none
             >;
 
             label = "useful";
